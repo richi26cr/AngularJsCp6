@@ -15,6 +15,6 @@ personApp.controller('PersonDetailCtrl',['$scope', '$routeParams', 'Person',
 
         $scope.setImage = function(imageUrl) {
             $scope.imageClicked = imageUrl;
-        }
+        };
     }
-]);;
+]);
