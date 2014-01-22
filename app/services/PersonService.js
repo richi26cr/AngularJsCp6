@@ -7,9 +7,7 @@
  */
 'use strict'
 
-var personServices = angular.module('personServices', ['ngResource']);
-
-personServices.factory('Person', ['$resource',
+serviceModule.factory('Person', ['$resource',
     function($resource){
         return $resource('persons/:personName.json', {}, {
             query: {method:'GET', params:{personName:'persons'}, isArray:true}

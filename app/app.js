@@ -9,7 +9,7 @@
 
 var personApp = angular.module('personApp',[
     'ngRoute',
-    'personServices'
+    'serviceModule'
 ]);
 
 personApp.config(['$routeProvider',
